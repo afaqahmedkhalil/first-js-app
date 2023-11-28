@@ -1,0 +1,110 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.container{
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0, 0, 50, 0.6),rgba(0, 0, 50, 0.6)),url(background.jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+
+
+.form-box{
+    width: 90%;
+    border-radius: 10px;
+    max-width: 450px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #fff;
+    padding: 50px 60px 70px;
+    text-align: center;
+}
+
+.form-box h1{
+    font-size: 30px;
+    margin-bottom: 60px;
+    color: tomato;
+    position: relative;
+}
+
+.form-box h1::after{
+    content: '';
+    width: 100px;
+    height: 4px;
+    border-radius: 3px;
+    background: tomato;
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    transform: translateX(-50%);
+
+}
+
+.input-field{
+    background: rgb(255, 182, 169);
+    margin: 15px 0;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    max-height: 65px;
+    transition: max-height 0.5s;
+    overflow: hidden;
+    
+}
+
+input{
+    width: 100%;
+    background: transparent;
+    border: 0;
+    outline: 0;
+    padding: 18px 15px;
+
+}
+
+form p {
+    text-align: left;
+    font-size: 13px;
+}
+
+form p a {
+    text-decoration: none;
+    color: tomato;
+}
+
+.btn-field{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-field button{
+    
+    flex-basis: 48%;
+    background: tomato;
+    color: white;
+    height: 40px;
+    border-radius: 20px;
+    border: 0;
+    outline: 0;
+    cursor:pointer ;
+    transition: background 1s;
+}
+
+.input-group{
+    height: 280px;
+}
+
+.btn-field button .disable{
+    background: #fff;
+    color: grey;
+}
